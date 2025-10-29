@@ -4,8 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.time.LocalDateTime
 
-@Entity(tableName = "word")
-data class WordEntity(
+@Entity(tableName = "words")
+data class Words(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val userId: String,
     val word: String,
@@ -13,3 +13,4 @@ data class WordEntity(
     val updatedAt: LocalDateTime,
     val category: String,
 )
+
